@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EZ 30 min ve vimu</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: 'Helvetica', 'Arial', sans-serif;
+        display: grid;
+        grid-template-areas:  "header header"
+                              "feature1 feature2"
+                              "feature3 feature4"
+                              "feature5 feature6"
+                              "feature7 feature8"
+                              "feature9 feature10";
+        grid-template-rows: 1000px 300px 300px 300px 300px 300px;
+        grid-template-columns: auto;
+      }
+
+      .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      body > header > div > div > p {
+        line-height: 130%;
+      }
+
+      header {
+        grid-area: header;
+        background-color: blue;
+        background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.techhive.com/images/article/2016/11/code-1839406-100696509-orig.jpg');
+      }
+
+      .hero {
+        text-align: center;
+        color: #d6d6d6;
+        font-size: 30px;
+        padding-top: 180px;
+      }
+
+      .hero>i {
+        font-size: 150px;
+        padding-bottom: 20px;
+        color: #26c7d9;
+      }
+
+      .btn {
+        background-color: #26c7d9;
+        border: none;
+        color: #d6d6d6;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 36px;
+      }
+
+      .hero>.container>p {
+        padding-top: 20px;
+        padding-left: 350px;
+        padding-right: 350px;
+      }
+
+      .hero>.container>p>span {
+        font-weight: bold;
+        color: white;
+      }
+
+      .feature1 {
+        grid-area: feature1;
+        background-color: #a5d6a7;
+      }
+
+      .feature2 {
+        grid-area: feature2;
+        background-color: #26c7db;
+      }
+
+      .feature3 {
+        grid-area: feature3;
+        background-color: #fff176;
+      }
+
+      .feature4 {
+        grid-area: feature4;
+        background-color: #ffab91;
+      }
+
+      .feature5 {
+        grid-area: feature5;
+        background-color: #d2c4e8;
+      }
+
+      .feature6 {
+        grid-area: feature6;
+        background-color: #b2ebf2;
+      }
+
+      .feature7 {
+        grid-area: feature7;
+        background-color: #ffe0b2;
+      }
+
+      .feature8 {
+        grid-area: feature8;
+        background-color:  #b2dfdc;
+      }
+
+      .feature9 {
+        grid-area: feature9;
+        background-color: #faad81;
+      }
+
+      .feature10 {
+        grid-area: feature10;
+        background-color: #ddedc8;
+      }
+
+      .feat {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      .feat > .container {
+        padding-top: 40px;
+      }
+
+      .feat > .container > h1 {
+        padding-top: 10px;
+        font-weight: bold;
+      }
+
+      .feat > .container > p {
+        padding-top: 10px;
+        font-size: 30px;
+        color: #575757;
+      }
+
+      @media (max-width: 1200px) {
+        body {
+          display: grid;
+          grid-template-areas:  "header"
+                                "feature1"
+                                "feature2"
+                                "feature3"
+                                "feature4"
+                                "feature5"
+                                "feature6"
+                                "feature7"
+                                "feature8"
+                                "feature9"
+                                "feature10";
+          grid-template-rows: 550px 400px 400px 400px 400px 400px 400px 400px 400px 400px 400px;
+          grid-template-columns: auto;
+        }
+
+        .hero {
+          padding-top: 40px;
+        }
+
+        .hero > i {
+          font-size: 100px;
+        }
+
+        .container {
+          padding-left: 0px;
+          padding-right: 0px;
+          margin-left: 10px;
+          line-height: 100%;
+        }
+
+        .hero>.container>p {
+          padding-left: 0px;
+          padding-right: 0px;
+        }
+
+        .btn {
+          font-size: 20px;
+        }
+
+        .feat > .container {
+          padding-top: 45px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="hero">
+        <i class="fa fa-map-marker fa-2x"></i>
+        <br>
+        <a href="" class="btn">The Event WP Theme</a>
+        <div class="container">
+          <p>
+            <span>All you need: </span>Integrated payments, pricing plans, unlimited color schemes and
+            Google fonts, responsive and mobile ready, easy to use and customize
+            with shortcodes and visual composer. For one page
+            or multi-pages events website.
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="feature1 feat">
+      <div class="container">
+        <i class="fa fa-files-o fa-2x"></i>
+        <h1>One/Multi Pages</h1>
+        <p>
+          chose between a single page <br>
+          website or multiple dedicated pages
+        </p>
+      </div>
+    </div>
+    <div class="feature2 feat">
+      <div class="container">
+        <i class="fa fa-credit-card fa-2x"></i>
+        <h1>Integrated Payments</h1>
+        <p>
+          Paypal and Stripe integrated right in the <br>
+          theme, so you can receive payments
+        </p>
+      </div>
+    </div>
+    <div class="feature3 feat">
+      <div class="container">
+        <i class="fa fa-paint-brush fa-2x"></i>
+        <h1>Unlimited Colors</h1>
+        <p>
+          Unlimited color shemes selection, so you <br>
+          can customize it to blend perfectly
+        </p>
+      </div>
+    </div>
+    <div class="feature4 feat">
+      <div class="container">
+        <i class="fa fa-bold fa-2x"></i>
+        <h1>Google Fonts</h1>
+        <p>
+          Choose any font from Google Web 650+ Fonts <br>
+          Directory. Beacause typography matters
+        </p>
+      </div>
+    </div>
+    <div class="feature5 feat">
+      <div class="container">
+        <i class="fa fa-database fa-2x"></i>
+        <h1>Pricing Plans</h1>
+        <p>Setup your pricing plans and <br>
+          get paid
+        </p>
+      </div>
+    </div>
+    <div class="feature6 feat">
+      <div class="container">
+        <i class="fa fa-envelope-o fa-2x"></i>
+        <h1>Newsletter</h1>
+        <p>Get users to signup for your <br>
+           newsletter subscription
+        </p>
+      </div>
+    </div>
+    <div class="feature7 feat">
+      <div class="container">
+        <i class="fa fa-tablet fa-2x"></i>
+        <h1>Mobile & Tablet Ready</h1>
+        <p>
+          it's built using Bootstrap 3 and it's ready <br>
+          for mobile devices screen sizes
+        </p>
+      </div>
+    </div>
+    <div class="feature8 feat">
+      <div class="container">
+        <i class="fa fa-magic fa-2x"></i>
+        <h1>Visual Composer</h1>
+        <p>Use the integrated visual composer <br>
+          and 10 custom shortcodes
+        </p>
+      </div>
+    </div>
+    <div class="feature9 feat">
+      <div class="container">
+        <i class="fa fa-eye fa-2x"></i>
+        <h1>Retina-Ready</h1>
+        <p>
+          Optimized and enhanced for regular <br>
+          and retina displays
+        </p>
+      </div>
+    </div>
+    <div class="feature10 feat">
+      <div class="container">
+        <i class="fa fa-cogs fa-2x"></i>
+        <h1>Redux Framework</h1>
+        <p>Built using the robust Redux Framework <br>
+          with admin back-end settings
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
